@@ -1,0 +1,45 @@
+ body {
+      display: flex;
+      height: 100vh;
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      background: #f3f3f3;
+    }
+
+  
+    .yt-logo {
+      width: 180px;       
+      height: 110px;
+      background: #FF0000;   
+      border-radius: 20px;  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+      position: relative;
+    }
+
+    
+    .yt-logo .play {
+      width: 0;
+      height: 0;
+      border-left: 42px solid #ffffff; 
+      border-top: 26px solid transparent;
+      border-bottom: 26px solid transparent;
+      margin-left: 6px; 
+    }
+
+   
+    .caption {
+      text-align: center;
+      margin-top: 16px;
+      color: #333;
+      font-size: 14px;
+    }
+
+   
+    @media (max-width: 420px) {
+      .yt-logo { transform: scale(0.85); }
+    }
